@@ -157,7 +157,9 @@ var gPIXIHandlers = [
   'pointerup',
   'pointermove',
   'pointerupoutside',
-  'pointercancel'
+  'pointercancel',
+  'pointerover',
+  'pointerout'
 ];
 
 var DisplayObjectMixin = {
