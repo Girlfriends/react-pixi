@@ -368,11 +368,13 @@ var PIXIStage = React.createClass({
     const antialias = props.antialias ? props.antialias : false;
     const transparent = props.transparent ? props.transparent : false;
     const preserveDrawingBuffer = props.preserveDrawingBuffer ? props.preserveDrawingBuffer : false;
+    const roundPixels = props.roundPixels ? props.roundPixels : false;
 
     this._pixirenderer = PIXI.autoDetectRenderer(props.width, props.height,
       {view:renderelement,
        backgroundColor: backgroundColor,
-       antialias: props.antialias,
+       antialias: antialias,
+       roundPixels: roundPixels,
        transparent: transparent,
        resolution: props.resolution,
        preserveDrawingBuffer: preserveDrawingBuffer
